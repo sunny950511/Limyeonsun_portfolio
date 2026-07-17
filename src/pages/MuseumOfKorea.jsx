@@ -155,7 +155,7 @@ function MuseumOfKorea() {
           {/* ── 카드 01 ────────────────────────── */}
           <div className="mok-asis-card">
             {/* 스크린 이미지 (518×626) - absolute 배치 */}
-            <img src="/section03_asis01.png" alt="As-Is 스크린 01" className="mok-asis-screen-img" />
+            <img src="./section03_asis01.png" alt="As-Is 스크린 01" className="mok-asis-screen-img" />
 
             {/* AS-IS 01: 흰 박스 [박스 → 선 → 원●] */}
             <div className="mok-asis-box mok-asis-box--01-asis">
@@ -179,7 +179,7 @@ function MuseumOfKorea() {
           {/* ── 카드 02 ────────────────────────── */}
           <div className="mok-asis-card">
             {/* 스크린 이미지 (526×635) - absolute 배치 */}
-            <img src="/section03_asis02.png" alt="As-Is 스크린 02" className="mok-asis-screen-img mok-asis-screen-img--02" />
+            <img src="./section03_asis02.png" alt="As-Is 스크린 02" className="mok-asis-screen-img mok-asis-screen-img--02" />
 
             {/* AS-IS 02-1: 흰 박스 [박스 → 선 → 원●] */}
             <div className="mok-asis-box mok-asis-box--02-asis1">
