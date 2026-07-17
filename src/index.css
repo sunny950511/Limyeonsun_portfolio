@@ -27,9 +27,14 @@ img, video {
   display: block;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body, #root {
   width: 100%;
-  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body {
@@ -2205,7 +2210,7 @@ body {
 }
 
 /* 카드 3개 묶어주는 부모 컨테이너 */
-.card-container {
+.mlb-feature-card-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2214,7 +2219,7 @@ body {
 }
 
 /* 각 줄 텍스트의 공통 속성 */
-.item {
+.mlb-feature-item {
   font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
@@ -2226,7 +2231,7 @@ body {
 }
 
 /* 왼쪽 회색 박스 */
-.card-col-left {
+.mlb-feature-card-left {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2242,12 +2247,12 @@ body {
   box-sizing: border-box;
 }
 
-.card-col-left .item:not(:last-child) {
+.mlb-feature-card-left .mlb-feature-item:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 아이템 사이 얇은 선 */
 }
 
 /* --- 2. 중앙 노란색 박스 (핵심) --- */
-.card-col-center {
+.mlb-feature-card-center {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2266,12 +2271,12 @@ body {
   box-sizing: border-box;
 }
 
-.card-col-center .item:not(:last-child) {
+.mlb-feature-card-center .mlb-feature-item:not(:last-child) {
   border-bottom: 1px solid rgba(41, 64, 41, 0.15);
 }
 
 /* --- 3. 오른쪽 주황색 박스 --- */
-.card-col-right {
+.mlb-feature-card-right {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2288,7 +2293,7 @@ body {
   box-sizing: border-box;
 }
 
-.card-col-right .item:not(:last-child) {
+.mlb-feature-card-right .mlb-feature-item:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* 아이템 사이 얇은 선 */
 }
 
