@@ -27,11 +27,15 @@ img, video {
   display: block;
 }
 
+body, #root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-sans);
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -474,7 +478,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 1080px;
   padding: 64px 200px;
   box-sizing: border-box;
@@ -644,7 +650,9 @@ body {
 }
 
 .mok-overview-layout {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 1080px;
   padding: 120px 200px;
   box-sizing: border-box;
@@ -719,7 +727,9 @@ body {
 
 .persona-flat-container-2col {
   display: flex;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 1080px;
   padding: 126px 200px; /* 상단 시작 위치 Y=126px을 충족하기 위한 정밀 패딩 지정 */
   box-sizing: border-box;
@@ -896,7 +906,9 @@ body {
 
 /* 섹션 전체 래퍼 */
 .mok-asis-tobe {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: rgba(0, 51, 102, 0.05);
   padding: 200px;
   box-sizing: border-box;
