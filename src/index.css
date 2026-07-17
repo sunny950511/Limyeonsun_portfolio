@@ -2503,6 +2503,7 @@ body {
    ========================================================================== */
 .aid-detail-page {
   width: 100%;
+  min-height: 100vh;
   font-family: "Pretendard", sans-serif;
   background:
     linear-gradient(
@@ -2513,7 +2514,10 @@ body {
       rgba(254, 226, 228, 0.8) 99.37%
     ),
     #fff;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: #1a0826;
+  padding-bottom: 400px; /* 맨 아래 메인페이지 황토색 배경 삐져나옴 방지용 여백 확장 */
 }
 
 /* 1. Hero Section */
@@ -2530,6 +2534,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-bottom: 400px;
 }
 
 .aid-hero-inner {
@@ -2657,55 +2662,29 @@ body {
   color: #1a0826;
 }
 
-/* 2. Overview Section & Common Card Styles */
+/* 2. Overview Section (사용자 기준 섹션 1번) */
 .aid-overview-section {
   width: 100%;
-  height: 1738px;
-  min-height: 1738px;
-  max-height: 1738px;
+  height: 2138px;
+  min-height: 2138px;
+  max-height: 2138px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   overflow: visible;
-}
-
-.aid-concept-section,
-.aid-features-section,
-.aid-review-section {
-  width: 100%;
-  height: 1080px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  overflow: hidden;
+  margin-bottom: 400px;
 }
 
 .aid-overview-inner {
-  display: flex;
-  padding: 0 200px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 200px;
-  align-self: stretch;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.aid-concept-inner,
-.aid-features-inner,
-.aid-review-inner {
   width: 1920px;
-  height: 100%;
-  padding: 100px 200px;
+  height: auto;
+  padding: 200px 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  gap: 200px;
 }
 
 .aid-ov-tag-block {
@@ -2822,4 +2801,437 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 16px;
+}
+
+/* 3. Hypothesis Section (Figma 섹션02 가설 레이아웃 - 사용자 기준 섹션 2번) */
+.aid-hypothesis-section {
+  width: 100%;
+  height: 1738px;
+  min-height: 1738px;
+  max-height: 1738px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: visible;
+  margin-bottom: 400px;
+}
+
+.aid-hypothesis-inner {
+  display: flex;
+  padding: 0 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  align-self: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.aid-hypo-tag-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.aid-hypo-quote-box {
+  width: 100%;
+  max-width: 1520px;
+  height: 158px;
+  border-radius: 32px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    inset 0 4px 10px rgba(255, 255, 255, 0.1),
+    0 20px 40px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 48px 60px;
+}
+
+.aid-hypo-quote {
+  font-family: "Geist", "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #1a0826;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.aid-hypo-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1520px;
+  box-sizing: border-box;
+}
+
+.aid-hypo-group {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 828px;
+  box-sizing: border-box;
+
+  /* [위치 조절용] 직접 수치를 바꿔 정밀하게 조절하실 수 있습니다. */
+  position: relative;
+  top: 0px; /* 세로 조절 (음수(-)는 위로, 양수(+)는 아래로) */
+  left: 0px; /* 가로 조절 (음수(-)는 왼쪽, 양수(+)는 오른쪽으로) */
+  z-index: 2; /* 목업 이미지보다 위로 오도록 설정 */
+}
+
+.aid-hypo-card {
+  box-sizing: border-box;
+  padding: 60px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 4px 40px rgba(0, 0, 0, 0.05),
+    0 20px 40px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(25px);
+  text-align: left;
+}
+
+.aid-hypo-card--if {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.aid-hypo-card--then {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.aid-hypo-title-tag {
+  font-family: "Geist", "Pretendard", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.aid-hypo-desc {
+  font-family: "Inter", "Pretendard", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+  word-break: keep-all;
+}
+
+.aid-iphone-wrapper {
+  width: 759px;
+  height: 983px;
+  box-sizing: border-box;
+
+  /* [위치 조절용] 직접 수치를 바꿔 정밀하게 조절하실 수 있습니다. */
+  position: relative;
+  top: 300px; /* 세로 조절 (음수(-)는 위로, 양수(+)는 아래로) */
+  left: -50px; /* 가로 조절 (음수(-)는 왼쪽, 양수(+)는 오른쪽으로) */
+  z-index: 1; /* 카드 글 상자 뒤로 가도록 설정 */
+}
+
+.aid-iphone-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* 4. Architecture Section (Figma 섹션03 - 사용자 기준 섹션 3번) */
+.aid-architecture-section {
+  width: 100%;
+  height: 2269px;
+  min-height: 2269px;
+  max-height: 2269px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: visible;
+  margin-bottom: 400px;
+}
+
+.aid-architecture-inner {
+  display: flex;
+  padding: 0 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  align-self: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.aid-arch-tag-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.aid-arch-quote-box {
+  width: 100%;
+  max-width: 1520px;
+  height: 158px;
+  border-radius: 32px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    inset 0 4px 10px rgba(255, 255, 255, 0.1),
+    0 20px 40px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 48px 60px;
+}
+
+.aid-arch-quote {
+  font-family: "Geist", "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #1a0826;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.aid-arch-mockup-wrapper {
+  width: 1520px;
+  height: 961px;
+  box-sizing: border-box;
+  
+  /* [위치 조절용] 직접 수치를 바꿔 정밀하게 조절하실 수 있습니다. */
+  position: relative;
+  top: 0px;          /* 세로 조절 (음수(-)는 위로, 양수(+)는 아래로) */
+  left: 0px;         /* 가로 조절 (음수(-)는 왼쪽, 양수(+)는 오른쪽으로) */
+}
+
+.aid-arch-mockup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.aid-arch-desc-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 1520px;
+  box-sizing: border-box;
+}
+
+.aid-arch-card {
+  width: 740px;
+  height: 350px;
+  padding: 60px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 4px 40px rgba(0, 0, 0, 0.05),
+    0 20px 40px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  text-align: left;
+  
+  /* [위치 조절용] 직접 수치를 바꿔 정밀하게 조절하실 수 있습니다. */
+  position: relative;
+  top: 0px;          /* 세로 조절 */
+  left: 0px;         /* 가로 조절 */
+}
+
+.aid-arch-card-title {
+  font-family: "Geist", "Pretendard", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.aid-arch-card-list {
+  font-family: "Inter", "Pretendard", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.aid-arch-card-list li {
+  margin-bottom: 12px;
+  word-break: keep-all;
+}
+
+.aid-device-section {
+  width: 100%;
+  height: 642px;
+  min-height: 642px;
+  max-height: 642px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: visible;
+  margin-bottom: 400px; /* 다시 위쪽으로 위치했으므로 400px 마진 복원 */
+}
+
+.aid-device-inner {
+  width: 1550px;
+  height: 642px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* [위치 조절용] 직접 수치를 바꿔 정밀하게 조절하실 수 있습니다. */
+  position: relative;
+  top: 0px;          /* 세로 조절 (음수(-)는 위로, 양수(+)는 아래로) */
+  left: 0px;         /* 가로 조절 (음수(-)는 왼쪽, 양수(+)는 오른쪽으로) */
+}
+
+.aid-device-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* 6. Review Section (Figma 섹션05 - 사용자 기준 섹션 5번) */
+.aid-review-section {
+  width: 100%;
+  height: 1030px;
+  min-height: 1030px;
+  max-height: 1030px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: visible;
+  margin-bottom: 0px; /* 가장 아래에 위치하므로 margin 대신 부모 패딩을 통해 하단 여백 확보 */
+}
+
+.aid-review-inner {
+  display: flex;
+  padding: 0 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  align-self: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.aid-rev-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1520px;
+  box-sizing: border-box;
+  
+  /* [위치 조절용] 직접 수치를 바꿔 정밀하게 조절하실 수 있습니다. */
+  position: relative;
+  top: 0px;          /* 세로 조절 */
+  left: 0px;         /* 가로 조절 */
+}
+
+.aid-rev-title-box {
+  width: 363px;
+  height: 90px;
+  padding: 24px 60px;
+  border-radius: 32px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    inset 0 4px 10px rgba(255, 255, 255, 0.1),
+    0 20px 40px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.aid-rev-title {
+  font-family: "Geist", "Pretendard", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a0826;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.aid-rev-title.font-geist {
+  font-family: "Geist", sans-serif;
+}
+
+.aid-rev-desc-box {
+  width: 1037px;
+  padding: 60px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 4px 40px rgba(0, 0, 0, 0.05),
+    0 20px 40px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.aid-rev-list {
+  font-family: "Inter", "Pretendard", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.aid-rev-list li {
+  margin-bottom: 12px;
+  word-break: keep-all;
+}
+
+.aid-rev-list li:last-child {
+  margin-bottom: 0px;
 }
