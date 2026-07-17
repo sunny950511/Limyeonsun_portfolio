@@ -2890,6 +2890,13 @@ body {
   border-radius: 16px;
 }
 
+/* 1920px 미만 데스크톱/랩톱 해상도에서 화면 비율에 맞춰 전체 페이지 자동 스케일 조정 (로컬 1920px 화면과 100% 동일하게 보장) */
+@media (max-width: 1919px) and (min-width: 1024px) {
+  .museum-detail-page, .mellobe-detail-page, .aid-detail-page {
+    zoom: calc(100vw / 1920);
+  }
+}
+
 /* 반응형 레이아웃 보완: 화면이 좁을 때 화면을 벗어나는 문제 해결 */
 /* 1. 1600px 이하: 넓은 레이아웃 배치를 유지하기 위해 양옆 고정 패딩(200px)만 축소합니다. */
 @media (max-width: 1600px) {
