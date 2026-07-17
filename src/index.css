@@ -2503,7 +2503,6 @@ body {
    ========================================================================== */
 .aid-detail-page {
   width: 100%;
-  overflow-x: hidden;
   font-family: "Pretendard", sans-serif;
   background:
     linear-gradient(
