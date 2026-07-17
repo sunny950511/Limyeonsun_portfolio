@@ -2849,7 +2849,84 @@ body {
 }
 
 /* 반응형 레이아웃 보완: 화면이 좁을 때 화면을 벗어나는 문제 해결 */
+/* 1. 1600px 이하: 넓은 레이아웃 배치를 유지하기 위해 양옆 고정 패딩(200px)만 축소합니다. */
 @media (max-width: 1600px) {
+  .mok-hero-inner {
+    padding: 64px 40px;
+  }
+  .mok-overview-layout {
+    padding: 120px 40px;
+  }
+  .persona-flat-container-2col {
+    padding: 126px 40px;
+  }
+  .mok-asis-tobe {
+    padding: 100px 40px;
+  }
+  .user-flow-section {
+    padding: 100px 40px;
+  }
+  .design-guide-section {
+    padding: 64px 40px;
+  }
+  .review-section {
+    padding: 100px 40px;
+  }
+
+  /* 콘텐츠 폭 확보 */
+  .user-flow-title, .user-flow-container-wrapper, .design-guide-title, .design-guide-inner, .review-inner {
+    max-width: 100%;
+  }
+}
+
+/* 2. 1200px 이하 (태블릿 및 모바일): 화면이 매우 좁아지므로 레이아웃을 세로(column) 배치로 유연하게 전환합니다. */
+@media (max-width: 1200px) {
+  .mok-hero {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+  }
+  .mok-hero-inner {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+  .mok-hero-left, .mok-hero-right {
+    height: auto;
+    width: 100%;
+  }
+  .mok-hero-img {
+    width: 100%;
+    max-width: 393px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .mok-overview {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+  }
+  .mok-overview-layout {
+    height: auto;
+    gap: 40px;
+  }
+  .mok-overview-slogan {
+    font-size: 40px;
+  }
+  .museum-persona {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+  }
+  .persona-flat-container-2col {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+  .persona-left-frame {
+    width: 100%;
+    align-items: center;
+  }
   .mok-asis-card {
     height: auto;
     display: flex;
@@ -2878,7 +2955,7 @@ body {
   }
   .mok-pointer-line, .mok-pointer-line--olive, .mok-pointer-line--red,
   .mok-pointer-dot, .mok-pointer-dot--olive, .mok-pointer-dot--red {
-    display: none !important; /* 지시선은 수직 반응형 배치 시 불필요하므로 숨김 */
+    display: none !important; /* 수직 정렬 시 지시선 숨김 */
   }
   .user-flow-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -2897,7 +2974,7 @@ body {
     height: auto;
   }
   .flow-arrow {
-    display: none !important; /* 절대좌표 화살표 숨김 */
+    display: none !important; /* 화살표 숨김 */
   }
   .design-guide-inner {
     flex-direction: column;
@@ -2920,67 +2997,6 @@ body {
   }
   .rv-left-col .rv-card:nth-child(1), .rv-left-col .rv-card:nth-child(2) {
     height: auto;
-  }
-  .review-section {
-    height: auto;
-    padding: 100px 40px;
-  }
-  .design-guide-section {
-    height: auto;
-    padding: 100px 40px;
-  }
-  .user-flow-section {
-    height: auto;
-    padding: 100px 40px;
-  }
-  .mok-hero {
-    height: auto;
-    min-height: auto;
-    max-height: none;
-  }
-  .mok-hero-inner {
-    flex-direction: column;
-    height: auto;
-    padding: 100px 40px;
-    gap: 40px;
-  }
-  .mok-hero-left, .mok-hero-right {
-    height: auto;
-    width: 100%;
-  }
-  .mok-hero-img {
-    width: 100%;
-    max-width: 393px;
-    height: auto;
-    margin: 0 auto;
-  }
-  .mok-overview {
-    height: auto;
-    min-height: auto;
-    max-height: none;
-  }
-  .mok-overview-layout {
-    height: auto;
-    padding: 100px 40px;
-    gap: 40px;
-  }
-  .mok-overview-slogan {
-    font-size: 40px;
-  }
-  .museum-persona {
-    height: auto;
-    min-height: auto;
-    max-height: none;
-  }
-  .persona-flat-container-2col {
-    flex-direction: column;
-    height: auto;
-    padding: 100px 40px;
-    gap: 40px;
-  }
-  .persona-left-frame {
-    width: 100%;
-    align-items: center;
   }
 }
 
