@@ -2890,10 +2890,13 @@ body {
   border-radius: 16px;
 }
 
-/* 1920px 미만 데스크톱/랩톱 해상도에서 화면 비율에 맞춰 전체 페이지 자동 스케일 조정 (로컬 1920px 화면과 100% 동일하게 보장) */
-@media (max-width: 1919px) and (min-width: 1024px) {
+/* 1024px 이상의 모든 데스크톱/고해상도 환경에서 화면 폭에 맞춰 줌 배율 자동 조정 (QHD/4K 모니터 호환) */
+@media (min-width: 1024px) {
   .museum-detail-page, .mellobe-detail-page, .aid-detail-page {
     zoom: calc(100vw / 1920);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
 
