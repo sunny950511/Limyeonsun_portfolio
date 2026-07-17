@@ -1733,7 +1733,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 1080px;
   padding: 64px 200px;
   box-sizing: border-box;
@@ -1742,7 +1744,8 @@ body {
 
 /* 좌측 970px HUG x 952px FILL, gap: Auto (space-between) */
 .mlb-hero-left {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 100%; /* 952px 공간 100% 사용 */
   display: flex;
   flex-direction: column;
@@ -1752,7 +1755,8 @@ body {
 
 /* Block 1: 타이틀 박스 (771x269 HUG) */
 .mlb-hero-top-group {
-  width: 771px;
+  width: 100%;
+  max-width: 771px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1794,7 +1798,8 @@ body {
 
 /* Block 2: Live Demo (970 FIXED x 93 HUG) */
 .mlb-live-demo-wrapper {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 93px;
   display: flex;
   align-items: center;
@@ -1820,7 +1825,8 @@ body {
 
 /* Block 3: PERIOD 리스트 (970 FIXED x 452 HUG) */
 .mlb-info-list {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 452px;
   display: flex;
   flex-direction: column;
@@ -1876,7 +1882,9 @@ body {
 
 .mlb-overview-inner {
   position: relative;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 1438px;
   display: flex;
   flex-direction: row;
@@ -1885,7 +1893,8 @@ body {
 
 .mlb-overview-card {
   box-sizing: border-box;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   height: 1438px;
   background-color: #ff6b35; /* Figma 오버뷰 주황색 배경 */
   display: flex;
@@ -1943,7 +1952,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 1438px;
   pointer-events: none;
 }
@@ -1998,7 +2008,8 @@ body {
 /* 상단 라인 및 로고 3 데코 영역 */
 .mlb-hypo-header-line {
   position: relative;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 414px;
 }
 
@@ -2015,7 +2026,8 @@ body {
 
 .mlb-hypothesis-inner {
   position: relative;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 1692px; /* 2106 - 414 */
   display: flex;
   flex-direction: column;
@@ -2026,9 +2038,11 @@ body {
 /* 주황색 타이틀 카드 */
 .mlb-hypo-title-card {
   position: absolute;
-  left: 293.5px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0px; /* y relative 414px (inner 기준 0px) */
-  width: 1333px;
+  width: 100%;
+  max-width: 1333px;
   height: 216px;
   background-color: #ff6b35;
   border-radius: 16px;
@@ -2052,7 +2066,8 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 100%;
   pointer-events: none;
 }
@@ -2073,7 +2088,8 @@ body {
 .mlb-bubble-card--if {
   left: 200px;
   top: 400px; /* y relative 810px (inner 기준 810-414 = 396px -> 400px) */
-  width: 885px;
+  width: 100%;
+  max-width: 885px;
   height: 296px;
 }
 
@@ -2092,7 +2108,8 @@ body {
 .mlb-bubble-card--then {
   left: 510px;
   top: 878px; /* y relative 1292px (inner 기준 1292-414 = 878px) */
-  width: 1210px;
+  width: 100%;
+  max-width: 1210px;
   height: 296px;
 }
 
@@ -2132,7 +2149,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 100%;
   pointer-events: none;
 }
@@ -2211,7 +2229,8 @@ body {
 .card-col-left {
   display: flex;
   flex-direction: column;
-  width: 473px;
+  width: 100%;
+  max-width: 473px;
   height: 601px;
   background-color: #666666;
   border-radius: 32px;
@@ -2231,7 +2250,8 @@ body {
 .card-col-center {
   display: flex;
   flex-direction: column;
-  width: 239px;
+  width: 100%;
+  max-width: 239px;
   height: 592px;
   background-color: #ffeba1;
   border-radius: 100px; /* 알약 모양 */
@@ -2254,7 +2274,8 @@ body {
 .card-col-right {
   display: flex;
   flex-direction: column;
-  width: 976px;
+  width: 100%;
+  max-width: 976px;
   height: 728px;
   background-color: #ff6b35;
   border: 5px solid #ffffff; /* 하얀색 테두리 */
@@ -2287,7 +2308,9 @@ body {
 
 .mlb-simulator-inner {
   position: relative;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -2355,7 +2378,8 @@ body {
   position: absolute;
   left: 1055px;
   top: 450px;
-  width: 667px;
+  width: 100%;
+  max-width: 667px;
   display: flex;
   flex-direction: column;
   gap: 65px; /* itemSpacing: 65 */
@@ -2363,7 +2387,8 @@ body {
 }
 
 .mlb-sim-card {
-  width: 667px;
+  width: 100%;
+  max-width: 667px;
   height: 221px;
   border-radius: 16px;
   background-size: contain;
@@ -2402,7 +2427,8 @@ body {
 /* --- 전체 배경 섹션 --- */
 .mlb-dual-layout-section {
   display: flex;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 1080px; /* 세로 높이를 1080px로 설정 */
   padding: 120px 200px; /* 패딩을 줄여서 1080px 내부에 맞춤 */
   flex-direction: column;
@@ -2456,7 +2482,8 @@ body {
 /* --- 우측 박스 --- */
 .mlb-box-right {
   display: flex;
-  width: 765px;
+  width: 100%;
+  max-width: 765px;
   height: 100%; /* 고정 높이 1261px 대신 100%를 사용하여 1080px 내부 영역에 맞춤 */
   padding: 60px 45px; /* 내부 패딩 조절 */
   flex-direction: column;
@@ -2569,7 +2596,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 1080px;
   padding: 64px 200px;
   box-sizing: border-box;
@@ -2577,7 +2606,8 @@ body {
 }
 
 .aid-hero-left {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -2586,7 +2616,8 @@ body {
 }
 
 .aid-hero-top-group {
-  width: 771px;
+  width: 100%;
+  max-width: 771px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -2626,7 +2657,8 @@ body {
 }
 
 .aid-live-demo-wrapper {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 93px;
   display: flex;
   align-items: center;
@@ -2651,7 +2683,8 @@ body {
 }
 
 .aid-info-list {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 452px;
   display: flex;
   flex-direction: column;
@@ -2714,7 +2747,9 @@ body {
 }
 
 .aid-overview-inner {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: auto;
   padding: 100px 200px;
   display: flex;
@@ -2727,7 +2762,9 @@ body {
 .aid-concept-inner,
 .aid-features-inner,
 .aid-review-inner {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 100%;
   padding: 100px 200px;
   display: flex;
@@ -2761,7 +2798,8 @@ body {
 
 /* Quote Box (Glassmorphism Title Container) */
 .aid-ov-quote-box {
-  width: 1520px;
+  width: 100%;
+  max-width: 1520px;
   height: 158px;
   border-radius: 32px;
   background: linear-gradient(
@@ -2878,6 +2916,20 @@ body {
   }
   .review-section {
     padding: 100px 40px;
+  }
+
+  /* Mellobe 및 AI Dashboard 패딩 축소 */
+  .mlb-hero-inner, 
+  .mlb-overview-card, 
+  .mlb-dual-layout-section, 
+  .mlb-single-mockup-section,
+  .aid-hero-inner, 
+  .aid-overview-inner, 
+  .aid-concept-inner, 
+  .aid-features-inner, 
+  .aid-review-inner {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 
   /* 콘텐츠 폭 확보 */
