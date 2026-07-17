@@ -27,11 +27,6 @@ img, video {
   display: block;
 }
 
-html {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 body, #root {
   width: 100%;
   min-height: 100vh;
