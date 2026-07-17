@@ -16,6 +16,7 @@ import simFeature1 from '../assets/projects/mellobe/section03_1_right_img.png';
 import simFeature2 from '../assets/projects/mellobe/section03_2_right_img.png';
 import simFeature3 from '../assets/projects/mellobe/section03_3_right_img.png';
 import centerMockupImg from '../assets/projects/mellobe/section04_Mockup.png';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 function Mellobe() {
   return (
@@ -314,6 +315,7 @@ function Mellobe() {
 
         </div>
 </section>
+      <ScrollToTopButton themeClass="theme-mellobe" />
     </div>
   );
 }

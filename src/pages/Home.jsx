@@ -2,6 +2,7 @@ import React from 'react';
 import MainSection from '../components/MainSection';
 import AboutSection from '../components/AboutSection';
 import IndexSection from '../components/IndexSection';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <MainSection />
       <AboutSection />
       <IndexSection />
+      <ScrollToTopButton themeClass="theme-home" />
     </div>
   );
 }

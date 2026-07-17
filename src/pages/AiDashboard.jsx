@@ -9,6 +9,7 @@ import rightImg01 from '../assets/projects/dashboard/section01_right_img.png';
 import section02Mockup from '../assets/projects/dashboard/section02_Mockup.png';
 import section03Mockup from '../assets/projects/dashboard/section03_Mockup.png';
 import section04Mockup from '../assets/projects/dashboard/section04_Mockup.png';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 function AiDashboard() {
   return (
@@ -217,6 +218,7 @@ function AiDashboard() {
           </div>
         </div>
       </section>
+      <ScrollToTopButton themeClass="theme-dashboard" />
     </div>
   );
 }

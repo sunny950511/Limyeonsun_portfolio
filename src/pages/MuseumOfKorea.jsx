@@ -5,6 +5,7 @@ import DesignGuideSection from '../components/DesignGuideSection';
 import MockupSection from '../components/MockupSection';
 import ReviewSection from '../components/ReviewSection';
 import VideoSection from '../components/VideoSection';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 // Import Assets
 import linkIcon from '../assets/projects/museum/link_icon.png';
@@ -244,6 +245,7 @@ function MuseumOfKorea() {
 
       {/* 8. Video Section (비디오 재생) */}
       <VideoSection />
+      <ScrollToTopButton themeClass="theme-museum" />
     </div>
   );
 }
