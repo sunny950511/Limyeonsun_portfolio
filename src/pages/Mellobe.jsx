@@ -153,27 +153,27 @@ function Mellobe() {
       </section>
 
       <section className="mlb-feature-section">
-        <div className="mlb-feature-card-container">
+        <div className="card-container">
 
           {/* 왼쪽 회색 박스 */}
-          <div className="mlb-feature-card-left">
-            <div className="mlb-feature-item">제품 특징을 텍스트로만<br />이해하기 어려움</div>
-            <div className="mlb-feature-item">화면에 반응이 없어<br />관심이 감소</div>
-            <div className="mlb-feature-item">수동적인 정보 탐색으로<br />몰입도 하락</div>  
+          <div className="card-col-left">
+            <div className="item">제품 특징을 텍스트로만<br />이해하기 어려움</div>
+            <div className="item">화면에 반응이 없어<br />관심이 감소</div>
+            <div className="item">수동적인 정보 탐색으로<br />몰입도 하락</div>  
           </div>
 
           {/* 중앙 노란색 박스 */}
-          <div className="mlb-feature-card-center">
-            <div className="mlb-feature-item">설명보다<br />체험을 우선</div>
-            <div className="mlb-feature-item">즉각적인<br />피드백 제공</div>
-            <div className="mlb-feature-item">사용자의<br />행동을 유도</div>
+          <div className="card-col-center">
+            <div className="item">설명보다<br />체험을 우선</div>
+            <div className="item">즉각적인<br />피드백 제공</div>
+            <div className="item">사용자의<br />행동을 유도</div>
           </div>
 
           {/* 오른쪽 주황색 박스 */}
-          <div className="mlb-feature-card-right">
-            <div className="mlb-feature-item">실시간 조명 시뮬레이터를 사용하여<br />직접 조작하며 제품을 이해할 수 있음</div>
-            <div className="mlb-feature-item">패턴, 밝기, 각도를 실시간으로 반영하여<br />조작 결과를 즉시 확인할 수 있음</div>
-            <div className="mlb-feature-item">클릭, 드래그 기반 인터랙션으로<br />능동적인 탐색 경험을 제공</div>
+          <div className="card-col-right">
+            <div className="item">실시간 조명 시뮬레이터를 사용하여<br />직접 조작하며 제품을 이해할 수 있음</div>
+            <div className="item">패턴, 밝기, 각도를 실시간으로 반영하여<br />조작 결과를 즉시 확인할 수 있음</div>
+            <div className="item">클릭, 드래그 기반 인터랙션으로<br />능동적인 탐색 경험을 제공</div>
           </div>
         </div>
       </section>

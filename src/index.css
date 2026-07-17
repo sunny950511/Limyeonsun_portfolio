@@ -21,21 +21,11 @@
   box-sizing: border-box;
 }
 
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-body, #root {
-  width: 100%;
-  min-height: 100vh;
-}
-
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-sans);
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -478,9 +468,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: 1080px;
   padding: 64px 200px;
   box-sizing: border-box;
@@ -489,8 +477,7 @@ body {
 
 /* 좌측 970px HUG x 952px FILL, gap: Auto (space-between) */
 .mok-hero-left {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 100%; /* 부모 inner의 상하 패딩 제외한 952px 공간 100% 사용 */
   display: flex;
   flex-direction: column;
@@ -542,8 +529,7 @@ body {
 
 /* Block 2: Live Demo (970 FIXED x 93 HUG) */
 .mok-live-demo-wrapper {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 93px;
   display: flex;
   align-items: center;
@@ -569,8 +555,7 @@ body {
 
 /* Block 3: PERIOD 리스트 (970 FIXED x 452 HUG) */
 .mok-info-list {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 452px;
   display: flex;
   flex-direction: column;
@@ -653,9 +638,7 @@ body {
 }
 
 .mok-overview-layout {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: 1080px;
   padding: 120px 200px;
   box-sizing: border-box;
@@ -730,9 +713,7 @@ body {
 
 .persona-flat-container-2col {
   display: flex;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: 1080px;
   padding: 126px 200px; /* 상단 시작 위치 Y=126px을 충족하기 위한 정밀 패딩 지정 */
   box-sizing: border-box;
@@ -909,9 +890,7 @@ body {
 
 /* 섹션 전체 래퍼 */
 .mok-asis-tobe {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   background-color: rgba(0, 51, 102, 0.05);
   padding: 200px;
   box-sizing: border-box;
@@ -937,8 +916,7 @@ body {
 
 /* 카드 공통 (1522×878, border-radius: 16px, position:relative) */
 .mok-asis-card {
-  width: 100%;
-  max-width: 1522px;
+  width: 1522px;
   height: 878px;
   border-radius: 16px;
   overflow: visible; /* 박스가 카드 밖으로 안 나가게 하되 절대 위치 유지 */
@@ -1145,15 +1123,13 @@ body {
   color: #003366;
   margin: 0 0 100px 0;
   line-height: 1.2;
-  width: 100%;
-  max-width: 1520px;
+  width: 1520px;
   text-align: left;
 }
 
 .user-flow-container-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 1520px;
+  width: 1520px;
   height: 1540px;
 }
 
@@ -1286,8 +1262,7 @@ body {
   color: #003366;
   margin: 0 0 40px 0;
   line-height: 1.2;
-  width: 100%;
-  max-width: 1520px;
+  width: 1520px;
   text-align: left;
 }
 
@@ -1296,16 +1271,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 80px;
-  width: 100%;
-  max-width: 1520px;
+  width: 1520px;
   height: calc(100% - 136px);
 }
 
 .dg-colors-panel {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  max-width: 760px;
+  width: 760px;
   height: 100%;
 }
 
@@ -1336,7 +1309,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 100%;
+  width: 760px;
   height: 136px;
   padding: 16px 20px;
   font-family: "Geist", "Pretendard", sans-serif;
@@ -1402,8 +1375,7 @@ body {
 .dg-specs-panel {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  max-width: 680px;
+  width: 680px;
   font-family: "Pretendard", sans-serif;
 }
 
@@ -1569,15 +1541,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 80px;
-  width: 100%;
-  max-width: 1520px;
+  width: 1520px;
   height: 1112px; /* 1312px - 200px padding */
   box-sizing: border-box;
 }
 
 .rv-left-col {
-  flex: 1;
-  max-width: 700px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1586,8 +1556,7 @@ body {
 }
 
 .rv-right-col {
-  flex: 1;
-  max-width: 700px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1733,9 +1702,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: 1080px;
   padding: 64px 200px;
   box-sizing: border-box;
@@ -1744,8 +1711,7 @@ body {
 
 /* 좌측 970px HUG x 952px FILL, gap: Auto (space-between) */
 .mlb-hero-left {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 100%; /* 952px 공간 100% 사용 */
   display: flex;
   flex-direction: column;
@@ -1755,8 +1721,7 @@ body {
 
 /* Block 1: 타이틀 박스 (771x269 HUG) */
 .mlb-hero-top-group {
-  width: 100%;
-  max-width: 771px;
+  width: 771px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1798,8 +1763,7 @@ body {
 
 /* Block 2: Live Demo (970 FIXED x 93 HUG) */
 .mlb-live-demo-wrapper {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 93px;
   display: flex;
   align-items: center;
@@ -1825,8 +1789,7 @@ body {
 
 /* Block 3: PERIOD 리스트 (970 FIXED x 452 HUG) */
 .mlb-info-list {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 452px;
   display: flex;
   flex-direction: column;
@@ -1882,9 +1845,7 @@ body {
 
 .mlb-overview-inner {
   position: relative;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: 1438px;
   display: flex;
   flex-direction: row;
@@ -1893,8 +1854,7 @@ body {
 
 .mlb-overview-card {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 960px;
+  width: 960px;
   height: 1438px;
   background-color: #ff6b35; /* Figma 오버뷰 주황색 배경 */
   display: flex;
@@ -1952,8 +1912,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  max-width: 1920px;
+  width: 1920px;
   height: 1438px;
   pointer-events: none;
 }
@@ -2008,8 +1967,7 @@ body {
 /* 상단 라인 및 로고 3 데코 영역 */
 .mlb-hypo-header-line {
   position: relative;
-  width: 100%;
-  max-width: 1920px;
+  width: 1920px;
   height: 414px;
 }
 
@@ -2026,8 +1984,7 @@ body {
 
 .mlb-hypothesis-inner {
   position: relative;
-  width: 100%;
-  max-width: 1920px;
+  width: 1920px;
   height: 1692px; /* 2106 - 414 */
   display: flex;
   flex-direction: column;
@@ -2038,11 +1995,9 @@ body {
 /* 주황색 타이틀 카드 */
 .mlb-hypo-title-card {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 293.5px;
   top: 0px; /* y relative 414px (inner 기준 0px) */
-  width: 100%;
-  max-width: 1333px;
+  width: 1333px;
   height: 216px;
   background-color: #ff6b35;
   border-radius: 16px;
@@ -2066,8 +2021,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  max-width: 1920px;
+  width: 1920px;
   height: 100%;
   pointer-events: none;
 }
@@ -2088,8 +2042,7 @@ body {
 .mlb-bubble-card--if {
   left: 200px;
   top: 400px; /* y relative 810px (inner 기준 810-414 = 396px -> 400px) */
-  width: 100%;
-  max-width: 885px;
+  width: 885px;
   height: 296px;
 }
 
@@ -2108,8 +2061,7 @@ body {
 .mlb-bubble-card--then {
   left: 510px;
   top: 878px; /* y relative 1292px (inner 기준 1292-414 = 878px) */
-  width: 100%;
-  max-width: 1210px;
+  width: 1210px;
   height: 296px;
 }
 
@@ -2149,8 +2101,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  max-width: 1920px;
+  width: 1920px;
   height: 100%;
   pointer-events: none;
 }
@@ -2205,7 +2156,7 @@ body {
 }
 
 /* 카드 3개 묶어주는 부모 컨테이너 */
-.mlb-feature-card-container {
+.card-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2214,7 +2165,7 @@ body {
 }
 
 /* 각 줄 텍스트의 공통 속성 */
-.mlb-feature-item {
+.item {
   font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
@@ -2226,11 +2177,10 @@ body {
 }
 
 /* 왼쪽 회색 박스 */
-.mlb-feature-card-left {
+.card-col-left {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 473px;
+  width: 473px;
   height: 601px;
   background-color: #666666;
   border-radius: 32px;
@@ -2242,16 +2192,15 @@ body {
   box-sizing: border-box;
 }
 
-.mlb-feature-card-left .mlb-feature-item:not(:last-child) {
+.card-col-left .item:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 아이템 사이 얇은 선 */
 }
 
 /* --- 2. 중앙 노란색 박스 (핵심) --- */
-.mlb-feature-card-center {
+.card-col-center {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 239px;
+  width: 239px;
   height: 592px;
   background-color: #ffeba1;
   border-radius: 100px; /* 알약 모양 */
@@ -2266,16 +2215,15 @@ body {
   box-sizing: border-box;
 }
 
-.mlb-feature-card-center .mlb-feature-item:not(:last-child) {
+.card-col-center .item:not(:last-child) {
   border-bottom: 1px solid rgba(41, 64, 41, 0.15);
 }
 
 /* --- 3. 오른쪽 주황색 박스 --- */
-.mlb-feature-card-right {
+.card-col-right {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 976px;
+  width: 976px;
   height: 728px;
   background-color: #ff6b35;
   border: 5px solid #ffffff; /* 하얀색 테두리 */
@@ -2288,7 +2236,7 @@ body {
   box-sizing: border-box;
 }
 
-.mlb-feature-card-right .mlb-feature-item:not(:last-child) {
+.card-col-right .item:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* 아이템 사이 얇은 선 */
 }
 
@@ -2308,9 +2256,7 @@ body {
 
 .mlb-simulator-inner {
   position: relative;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: 100%;
 }
 
@@ -2378,8 +2324,7 @@ body {
   position: absolute;
   left: 1055px;
   top: 450px;
-  width: 100%;
-  max-width: 667px;
+  width: 667px;
   display: flex;
   flex-direction: column;
   gap: 65px; /* itemSpacing: 65 */
@@ -2387,8 +2332,7 @@ body {
 }
 
 .mlb-sim-card {
-  width: 100%;
-  max-width: 667px;
+  width: 667px;
   height: 221px;
   border-radius: 16px;
   background-size: contain;
@@ -2427,8 +2371,7 @@ body {
 /* --- 전체 배경 섹션 --- */
 .mlb-dual-layout-section {
   display: flex;
-  width: 100%;
-  max-width: 1920px;
+  width: 1920px;
   height: 1080px; /* 세로 높이를 1080px로 설정 */
   padding: 120px 200px; /* 패딩을 줄여서 1080px 내부에 맞춤 */
   flex-direction: column;
@@ -2482,8 +2425,7 @@ body {
 /* --- 우측 박스 --- */
 .mlb-box-right {
   display: flex;
-  width: 100%;
-  max-width: 765px;
+  width: 765px;
   height: 100%; /* 고정 높이 1261px 대신 100%를 사용하여 1080px 내부 영역에 맞춤 */
   padding: 60px 45px; /* 내부 패딩 조절 */
   flex-direction: column;
@@ -2596,9 +2538,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: 1080px;
   padding: 64px 200px;
   box-sizing: border-box;
@@ -2606,8 +2546,7 @@ body {
 }
 
 .aid-hero-left {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -2616,8 +2555,7 @@ body {
 }
 
 .aid-hero-top-group {
-  width: 100%;
-  max-width: 771px;
+  width: 771px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -2657,8 +2595,7 @@ body {
 }
 
 .aid-live-demo-wrapper {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 93px;
   display: flex;
   align-items: center;
@@ -2683,8 +2620,7 @@ body {
 }
 
 .aid-info-list {
-  width: 100%;
-  max-width: 970px;
+  width: 970px;
   height: 452px;
   display: flex;
   flex-direction: column;
@@ -2747,9 +2683,7 @@ body {
 }
 
 .aid-overview-inner {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: auto;
   padding: 100px 200px;
   display: flex;
@@ -2762,9 +2696,7 @@ body {
 .aid-concept-inner,
 .aid-features-inner,
 .aid-review-inner {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
   height: 100%;
   padding: 100px 200px;
   display: flex;
@@ -2798,8 +2730,7 @@ body {
 
 /* Quote Box (Glassmorphism Title Container) */
 .aid-ov-quote-box {
-  width: 100%;
-  max-width: 1520px;
+  width: 1520px;
   height: 158px;
   border-radius: 32px;
   background: linear-gradient(
@@ -2889,183 +2820,3 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
 }
-
-/* 1024px 이상의 모든 데스크톱/고해상도 환경에서 화면 폭에 맞춰 줌 배율 자동 조정 (QHD/4K 모니터 호환) */
-@media (min-width: 1024px) {
-  .museum-detail-page, .mellobe-detail-page, .aid-detail-page {
-    zoom: calc(100vw / 1920);
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-}
-
-/* 반응형 레이아웃 보완: 화면이 좁을 때 화면을 벗어나는 문제 해결 */
-/* 1. 1600px 이하: 넓은 레이아웃 배치를 유지하기 위해 양옆 고정 패딩(200px)만 축소합니다. */
-@media (max-width: 1600px) {
-  .main-section, .about-section, .index-section {
-    padding: 100px 40px;
-  }
-  .mok-hero-inner {
-    padding: 64px 40px;
-  }
-  .mok-overview-layout {
-    padding: 120px 40px;
-  }
-  .persona-flat-container-2col {
-    padding: 126px 40px;
-  }
-  .mok-asis-tobe {
-    padding: 100px 40px;
-  }
-  .user-flow-section {
-    padding: 100px 40px;
-  }
-  .design-guide-section {
-    padding: 64px 40px;
-  }
-  .review-section {
-    padding: 100px 40px;
-  }
-
-  /* Mellobe 및 AI Dashboard 패딩 축소 */
-  .mlb-hero-inner, 
-  .mlb-overview-card, 
-  .mlb-dual-layout-section, 
-  .mlb-single-mockup-section,
-  .aid-hero-inner, 
-  .aid-overview-inner, 
-  .aid-concept-inner, 
-  .aid-features-inner, 
-  .aid-review-inner {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-  }
-
-  /* 콘텐츠 폭 확보 */
-  .user-flow-title, .user-flow-container-wrapper, .design-guide-title, .design-guide-inner, .review-inner {
-    max-width: 100%;
-  }
-}
-
-/* 2. 1200px 이하 (태블릿 및 모바일): 화면이 매우 좁아지므로 레이아웃을 세로(column) 배치로 유연하게 전환합니다. */
-@media (max-width: 1200px) {
-  .mok-hero {
-    height: auto;
-    min-height: auto;
-    max-height: none;
-  }
-  .mok-hero-inner {
-    flex-direction: column;
-    height: auto;
-    gap: 40px;
-  }
-  .mok-hero-left, .mok-hero-right {
-    height: auto;
-    width: 100%;
-  }
-  .mok-hero-img {
-    width: 100%;
-    max-width: 393px;
-    height: auto;
-    margin: 0 auto;
-  }
-  .mok-overview {
-    height: auto;
-    min-height: auto;
-    max-height: none;
-  }
-  .mok-overview-layout {
-    height: auto;
-    gap: 40px;
-  }
-  .mok-overview-slogan {
-    font-size: 40px;
-  }
-  .museum-persona {
-    height: auto;
-    min-height: auto;
-    max-height: none;
-  }
-  .persona-flat-container-2col {
-    flex-direction: column;
-    height: auto;
-    gap: 40px;
-  }
-  .persona-left-frame {
-    width: 100%;
-    align-items: center;
-  }
-  .mok-asis-card {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 20px;
-  }
-  .mok-asis-screen-img, .mok-asis-screen-img--02 {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-  }
-  .mok-asis-box {
-    position: relative;
-    left: auto !important;
-    top: auto !important;
-    width: 100%;
-    max-width: 500px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .mok-pointer-line, .mok-pointer-line--olive, .mok-pointer-line--red,
-  .mok-pointer-dot, .mok-pointer-dot--olive, .mok-pointer-dot--red {
-    display: none !important; /* 수직 정렬 시 지시선 숨김 */
-  }
-  .user-flow-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-template-rows: auto;
-    gap: 40px;
-  }
-  .user-flow-container-wrapper {
-    height: auto;
-  }
-  .user-flow-card {
-    height: auto;
-    width: 100%;
-  }
-  .step-image {
-    width: 100%;
-    height: auto;
-  }
-  .flow-arrow {
-    display: none !important; /* 화살표 숨김 */
-  }
-  .design-guide-inner {
-    flex-direction: column;
-    height: auto;
-    gap: 40px;
-  }
-  .dg-colors-panel, .dg-specs-panel, .dg-color-bar {
-    width: 100%;
-    height: auto;
-  }
-  .review-inner {
-    flex-direction: column;
-    height: auto;
-    gap: 40px;
-  }
-  .rv-left-col, .rv-right-col {
-    width: 100%;
-    height: auto;
-    gap: 20px;
-  }
-  .rv-left-col .rv-card:nth-child(1), .rv-left-col .rv-card:nth-child(2) {
-    height: auto;
-  }
-}
-
