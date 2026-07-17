@@ -489,7 +489,8 @@ body {
 
 /* 좌측 970px HUG x 952px FILL, gap: Auto (space-between) */
 .mok-hero-left {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 100%; /* 부모 inner의 상하 패딩 제외한 952px 공간 100% 사용 */
   display: flex;
   flex-direction: column;
@@ -541,7 +542,8 @@ body {
 
 /* Block 2: Live Demo (970 FIXED x 93 HUG) */
 .mok-live-demo-wrapper {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 93px;
   display: flex;
   align-items: center;
@@ -567,7 +569,8 @@ body {
 
 /* Block 3: PERIOD 리스트 (970 FIXED x 452 HUG) */
 .mok-info-list {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   height: 452px;
   display: flex;
   flex-direction: column;
@@ -934,7 +937,8 @@ body {
 
 /* 카드 공통 (1522×878, border-radius: 16px, position:relative) */
 .mok-asis-card {
-  width: 1522px;
+  width: 100%;
+  max-width: 1522px;
   height: 878px;
   border-radius: 16px;
   overflow: visible; /* 박스가 카드 밖으로 안 나가게 하되 절대 위치 유지 */
@@ -1141,13 +1145,15 @@ body {
   color: #003366;
   margin: 0 0 100px 0;
   line-height: 1.2;
-  width: 1520px;
+  width: 100%;
+  max-width: 1520px;
   text-align: left;
 }
 
 .user-flow-container-wrapper {
   position: relative;
-  width: 1520px;
+  width: 100%;
+  max-width: 1520px;
   height: 1540px;
 }
 
@@ -1280,7 +1286,8 @@ body {
   color: #003366;
   margin: 0 0 40px 0;
   line-height: 1.2;
-  width: 1520px;
+  width: 100%;
+  max-width: 1520px;
   text-align: left;
 }
 
@@ -1289,7 +1296,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 80px;
-  width: 1520px;
+  width: 100%;
+  max-width: 1520px;
   height: calc(100% - 136px);
 }
 
@@ -1559,7 +1567,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 80px;
-  width: 1520px;
+  width: 100%;
+  max-width: 1520px;
   height: 1112px; /* 1312px - 200px padding */
   box-sizing: border-box;
 }
@@ -2838,3 +2847,140 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
 }
+
+/* 반응형 레이아웃 보완: 화면이 좁을 때 화면을 벗어나는 문제 해결 */
+@media (max-width: 1600px) {
+  .mok-asis-card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  .mok-asis-screen-img, .mok-asis-screen-img--02 {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  .mok-asis-box {
+    position: relative;
+    left: auto !important;
+    top: auto !important;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .mok-pointer-line, .mok-pointer-line--olive, .mok-pointer-line--red,
+  .mok-pointer-dot, .mok-pointer-dot--olive, .mok-pointer-dot--red {
+    display: none !important; /* 지시선은 수직 반응형 배치 시 불필요하므로 숨김 */
+  }
+  .user-flow-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: auto;
+    gap: 40px;
+  }
+  .user-flow-container-wrapper {
+    height: auto;
+  }
+  .user-flow-card {
+    height: auto;
+    width: 100%;
+  }
+  .step-image {
+    width: 100%;
+    height: auto;
+  }
+  .flow-arrow {
+    display: none !important; /* 절대좌표 화살표 숨김 */
+  }
+  .design-guide-inner {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+  .dg-colors-panel, .dg-specs-panel, .dg-color-bar {
+    width: 100%;
+    height: auto;
+  }
+  .review-inner {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+  .rv-left-col, .rv-right-col {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+  .rv-left-col .rv-card:nth-child(1), .rv-left-col .rv-card:nth-child(2) {
+    height: auto;
+  }
+  .review-section {
+    height: auto;
+    padding: 100px 40px;
+  }
+  .design-guide-section {
+    height: auto;
+    padding: 100px 40px;
+  }
+  .user-flow-section {
+    height: auto;
+    padding: 100px 40px;
+  }
+  .mok-hero {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+  }
+  .mok-hero-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 100px 40px;
+    gap: 40px;
+  }
+  .mok-hero-left, .mok-hero-right {
+    height: auto;
+    width: 100%;
+  }
+  .mok-hero-img {
+    width: 100%;
+    max-width: 393px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .mok-overview {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+  }
+  .mok-overview-layout {
+    height: auto;
+    padding: 100px 40px;
+    gap: 40px;
+  }
+  .mok-overview-slogan {
+    font-size: 40px;
+  }
+  .museum-persona {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+  }
+  .persona-flat-container-2col {
+    flex-direction: column;
+    height: auto;
+    padding: 100px 40px;
+    gap: 40px;
+  }
+  .persona-left-frame {
+    width: 100%;
+    align-items: center;
+  }
+}
+
