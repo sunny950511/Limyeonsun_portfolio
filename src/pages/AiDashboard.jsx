@@ -19,7 +19,7 @@ function AiDashboard() {
               <Link to="/" className="aid-back-btn">← Back to Home</Link>
               <div className="aid-title-block">
                 <h1 className="aid-title">웰니스 AI 대시보드</h1>
-                <p className="aid-subtitle">글래스모피즘 UI 기반의 감정 분석 명언과 시간 관리 툴을 결합한 올인원 데일리 웰니스 워크스페이스</p>
+                <p className="aid-subtitle">글래스모피즘 UI 기반의 감정 분석 명언과 시간 관리 툴을 결합한 올인원 웰니스 워크스페이스</p>
               </div>
             </div>
 
