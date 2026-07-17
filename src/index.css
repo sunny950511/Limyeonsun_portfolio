@@ -2796,7 +2796,7 @@ body {
 
 .aid-ov-card--text h3 {
   font-family: "Geist", "Pretendard", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   margin: 0;
   color: #000000;
@@ -2805,7 +2805,7 @@ body {
 
 .aid-ov-card--text p {
   font-family: "Geist", "Inter", "Pretendard", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32.4px;
   margin: 0;
   word-break: keep-all;
