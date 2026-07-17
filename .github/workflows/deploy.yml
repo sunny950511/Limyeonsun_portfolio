@@ -34,7 +34,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build project
         run: npm run build
@@ -42,7 +42,7 @@ jobs:
       - name: Upload production-ready build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Vite 빌드 아웃풋 디렉토리
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
