@@ -2660,9 +2660,9 @@ body {
 /* 2. Overview Section & Common Card Styles */
 .aid-overview-section {
   width: 100%;
-  height: 1838px;
-  min-height: 1838px;
-  max-height: 1838px;
+  height: 1818px;
+  min-height: 1818px;
+  max-height: 1818px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2685,7 +2685,7 @@ body {
 .aid-overview-inner {
   width: 1920px;
   height: auto;
-  padding: 100px 200px;
+  padding: 200px 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
