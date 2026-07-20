@@ -1202,9 +1202,9 @@ body {
 }
 
 .arrow-2 {
-  left: 684px;
-  top: 567px;
-  width: 126px;
+  left: 672px;
+  top: 562px;
+  width: 160px;
   height: 6px;
 }
 
@@ -1223,7 +1223,7 @@ body {
 }
 
 .arrow-5 {
-  left: 292px;
+  left: 276px;
   top: 1287px;
   width: 159px;
   height: 207px;
@@ -3289,7 +3289,7 @@ body {
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   color: #1a0826;
-  box-shadow: 
+  box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.05),
     inset 0 4px 10px rgba(255, 255, 255, 0.2);
 }
@@ -3302,14 +3302,14 @@ body {
 
 /* 3. 멜로비 테마 (딥 오렌지 / 조명 조작 웜톤) */
 .scroll-to-top-btn.theme-mellobe {
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   color: #ffffff;
-  border: 1px solid #FF6B00;
+  border: 1px solid #ff6b00;
 }
 .scroll-to-top-btn.theme-mellobe:hover {
   background-color: #ffffff;
-  color: #FF6B00;
-  border: 1px solid #FF6B00;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
 }
 
 /* 4. 국립중앙박물관 테마 (단정하고 깊이감 있는 딥 그레이 / 차분함) */
