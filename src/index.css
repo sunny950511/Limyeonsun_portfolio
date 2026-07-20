@@ -3385,3 +3385,584 @@ body {
   }
 }
 
+/* ==========================================================================
+   14. Responsive Layout Adjustments (1200px & 768px Media Queries)
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  /* Common / Global */
+  .section {
+    min-height: auto;
+    padding: 80px 40px;
+  }
+  
+  /* Main Section (Home) */
+  .main-section {
+    padding: 80px 40px;
+  }
+  .about-section {
+    padding: 80px 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about-left, .about-right {
+    max-width: 100%;
+    min-height: auto;
+  }
+  .design-guide-section {
+    height: auto;
+    padding: 60px 40px;
+  }
+  .design-guide-title {
+    width: 100%;
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  .design-guide-inner {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .dg-colors-panel, .dg-specs-panel {
+    width: 100%;
+  }
+  .dg-color-bar {
+    width: 100%;
+    height: 100px;
+  }
+  .dg-variables-image-wrapper {
+    width: 100%;
+  }
+  .dg-variables-image {
+    max-width: 100%;
+  }
+
+  /* Museum of Korea Detail Page */
+  .mok-hero {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    padding: 100px 40px;
+  }
+  .mok-hero-inner {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+    gap: 40px;
+  }
+  .mok-hero-left {
+    width: 100%;
+    height: auto;
+    gap: 32px;
+  }
+  .mok-hero-top-group {
+    width: 100%;
+  }
+  .mok-title {
+    font-size: 40px;
+  }
+  .mok-subtitle {
+    white-space: normal;
+  }
+  .mok-live-demo-wrapper {
+    width: 100%;
+  }
+  .mok-info-list {
+    width: 100%;
+    height: auto;
+  }
+  .mok-hero-right {
+    height: auto;
+    justify-content: center;
+  }
+  .mok-hero-img {
+    width: 280px;
+    height: auto;
+    margin-top: 0;
+  }
+  .mok-overview {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    padding: 80px 40px;
+  }
+  .mok-overview-layout {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    gap: 40px;
+  }
+  .mok-overview-slogan {
+    font-size: 40px;
+  }
+  .mok-overview-text-block {
+    max-width: 100%;
+    text-align: left;
+  }
+  .mok-overview-text-block p {
+    font-size: 16px;
+  }
+  .museum-persona {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    padding: 80px 40px;
+  }
+  .persona-flat-container-2col {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .persona-left-frame {
+    width: 100%;
+  }
+  .persona-image-wrapper {
+    max-width: 100%;
+    height: 350px;
+  }
+  .profile-meta-line-refined {
+    max-width: 100%;
+    gap: 20px;
+  }
+  .persona-quote {
+    max-width: 100%;
+    font-size: 20px;
+  }
+  .persona-right-frame {
+    width: 100%;
+  }
+  .pain-points-flat, .hypothesis-flat {
+    width: 100%;
+  }
+  .mok-asis-tobe {
+    height: auto;
+    min-height: auto;
+    padding: 80px 40px;
+  }
+  .mok-asis-tobe-inner {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .mok-asis-tobe-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .mok-asis-card {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .mok-asis-screen-img, .mok-asis-screen-img--02 {
+    position: static !important;
+    width: 260px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .mok-asis-box {
+    position: static !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: none !important;
+  }
+  .mok-desc-box {
+    width: 100% !important;
+  }
+  .mok-pointer-line, .mok-pointer-dot {
+    display: none !important;
+  }
+  .step-image {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+  }
+  .flow-arrow {
+    display: none !important;
+  }
+  .video-section {
+    height: auto;
+    padding: 80px 40px;
+  }
+  .video-container {
+    height: auto;
+  }
+  .museum-video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Mellobe Project */
+  .mlb-hero {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    padding: 100px 40px;
+  }
+  .mlb-hero-inner {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+    gap: 40px;
+  }
+  .mlb-hero-left {
+    width: 100%;
+    height: auto;
+    gap: 32px;
+  }
+  .mlb-hero-top-group {
+    width: 100%;
+  }
+  .mlb-title {
+    font-size: 40px;
+  }
+  .mlb-info-list {
+    width: 100%;
+    height: auto;
+  }
+  .mlb-overview-section {
+    height: auto;
+    min-height: auto;
+    padding: 80px 40px;
+  }
+  .mlb-overview-inner {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mlb-overview-card {
+    width: 100%;
+    padding: 30px;
+  }
+  .mlb-ov-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mlb-mockup-wrapper {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .mlb-mockup-item {
+    position: static !important;
+    width: 180px !important;
+    height: auto !important;
+    transform: none !important;
+  }
+  .mlb-hypothesis-section {
+    height: auto;
+    padding: 80px 40px;
+  }
+  .mlb-hypothesis-inner {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .mlb-hypo-title-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .mlb-hypo-title {
+    font-size: 24px;
+  }
+  .mlb-hypo-cards-group {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .mlb-bubble-card {
+    width: 100% !important;
+    height: auto !important;
+    padding: 30px !important;
+  }
+  .mlb-hypo-decor-wrapper {
+    display: none;
+  }
+  .mlb-feature-section {
+    padding: 80px 40px;
+  }
+  .mlb-feature-section .card-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .card-col-left, .card-col-center, .card-col-right {
+    width: 100% !important;
+    height: auto !important;
+    gap: 15px !important;
+  }
+  .card-col-left .item, .card-col-center .item, .card-col-right .item {
+    height: auto !important;
+    padding: 20px !important;
+  }
+  .mlb-simulator-section {
+    height: auto;
+    padding: 80px 40px;
+  }
+  .mlb-simulator-inner {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+    gap: 40px;
+  }
+  .mlb-sim-bg-device {
+    display: none;
+  }
+  .mlb-sim-mockup-wrapper {
+    position: static;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 12px;
+  }
+  .mlb-sim-video {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .mlb-sim-mockup-label {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .mlb-sim-cards-list {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mlb-sim-card {
+    position: static !important;
+    width: 100% !important;
+    height: 180px !important;
+    background-size: cover;
+  }
+  .mlb-single-mockup-section {
+    padding: 80px 40px;
+  }
+  .mlb-center-mockup-img {
+    width: 100%;
+    height: auto;
+  }
+  .mlb-dual-layout-section {
+    height: auto;
+    padding: 80px 40px;
+  }
+  .mlb-dual-inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mlb-left-column {
+    width: 100%;
+  }
+  .mlb-box {
+    width: 100% !important;
+    height: auto !important;
+    padding: 30px !important;
+  }
+
+  /* AI Dashboard Project */
+  .aid-hero {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    padding: 100px 40px;
+  }
+  .aid-hero-inner {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+    gap: 40px;
+  }
+  .aid-hero-left {
+    width: 100%;
+    height: auto;
+    gap: 32px;
+  }
+  .aid-hero-top-group {
+    width: 100%;
+  }
+  .aid-title {
+    font-size: 40px;
+  }
+  .aid-info-list {
+    width: 100%;
+    height: auto;
+  }
+  .aid-overview-section {
+    padding: 80px 40px;
+  }
+  .aid-overview-inner {
+    width: 100%;
+    height: auto;
+  }
+  .aid-ov-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .aid-ov-card--img {
+    height: 250px;
+  }
+  .aid-hypothesis-section {
+    padding: 80px 40px;
+  }
+  .aid-hypothesis-inner {
+    width: 100%;
+  }
+  .aid-hypo-content-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .aid-hypo-group {
+    width: 100%;
+  }
+  .aid-iphone-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  .aid-iphone-img {
+    width: 280px;
+    height: auto;
+  }
+  .aid-architecture-section {
+    padding: 80px 40px;
+  }
+  .aid-architecture-inner {
+    width: 100%;
+  }
+  .aid-arch-mockup-wrapper {
+    width: 100%;
+  }
+  .aid-arch-mockup-img {
+    width: 100%;
+    height: auto;
+  }
+  .aid-arch-desc-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .aid-arch-card {
+    width: 100%;
+  }
+  .aid-device-section {
+    padding: 80px 40px;
+  }
+  .aid-device-img {
+    width: 100%;
+    height: auto;
+  }
+  .aid-review-section {
+    padding: 80px 40px;
+  }
+  .aid-review-inner {
+    width: 100%;
+  }
+  .aid-rev-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .aid-rev-title-box {
+    width: 100%;
+  }
+  .aid-rev-desc-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Main Section (Home) */
+  .main-title {
+    font-size: 16px;
+  }
+  .main-author {
+    font-size: 28px;
+  }
+  .about-quote {
+    font-size: 24px;
+  }
+  .about-description {
+    font-size: 15px;
+  }
+  .index-header {
+    font-size: 40px;
+  }
+  .project-title {
+    font-size: 20px;
+  }
+  .project-desc {
+    font-size: 14px;
+  }
+  .dg-color-main-title, .dg-typo-main-title {
+    font-size: 24px;
+  }
+
+  /* Museum of Korea */
+  .mok-title {
+    font-size: 28px;
+  }
+  .mok-overview-slogan {
+    font-size: 28px;
+  }
+  .mok-asis-tobe-title {
+    font-size: 18px;
+  }
+  .profile-meta-line-refined {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Mellobe */
+  .mlb-title {
+    font-size: 28px;
+  }
+  .mlb-overview-card {
+    padding: 20px;
+  }
+  .mlb-mockup-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mlb-mockup-item {
+    width: 100%;
+    max-width: 240px;
+  }
+  .mlb-bubble-card {
+    padding: 20px !important;
+  }
+  .mlb-right-main-title {
+    font-size: 28px;
+  }
+
+  /* AI Dashboard */
+  .aid-title {
+    font-size: 28px;
+  }
+}
+
