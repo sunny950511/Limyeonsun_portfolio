@@ -314,7 +314,13 @@ function Mellobe() {
           </div>
 
         </div>
-</section>
+      </section>
+
+      {/* 하단 다음 버튼 */}
+      <div className="bottom-nav-container">
+        <Link to="/project/dashboard" className="back-home-button">Next Project →</Link>
+      </div>
+
       <ScrollToTopButton themeClass="theme-mellobe" />
     </div>
   );

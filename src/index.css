@@ -234,6 +234,15 @@ body {
   border-bottom: 1px solid var(--sub-border-color);
 }
 
+/* 2번째 프로젝트(Mellobe)의 위아래 보더라인 제거 */
+.project-item.project-mellobe {
+  border-top: none;
+}
+.project-item.project-ai-dashboard {
+  border-top: none;
+}
+
+
 .project-title {
   font-family: var(--font-cursive);
   font-size: 24px;
@@ -2523,8 +2532,9 @@ body {
 /* 1. Hero Section */
 .aid-hero {
   width: 100%;
-  height: auto;
+  height: 1080px;
   min-height: 1080px;
+  max-height: 1080px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -2542,9 +2552,8 @@ body {
   flex-direction: row;
   align-items: stretch;
   width: 1920px;
-  height: auto;
-  min-height: 1080px;
-  padding: 200px 200px;
+  height: 1080px;
+  padding: 64px 200px;
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -3323,3 +3332,56 @@ body {
   color: #2c2d31;
   border: 1px solid #2c2d31;
 }
+
+/* ==========================================================================
+   13. Bottom Navigation (Next Project Button)
+   ========================================================================== */
+.bottom-nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 200px 80px 200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 국립중앙박물관 하단 버튼 테마 */
+.museum-detail-page .bottom-nav-container {
+  background-color: #003366;
+}
+.museum-detail-page .bottom-nav-container .back-home-button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.museum-detail-page .bottom-nav-container .back-home-button:hover {
+  background-color: #ffffff;
+  color: #003366;
+  border: 1px solid #ffffff;
+}
+
+/* Mellobe 하단 버튼 테마 */
+.mellobe-detail-page .bottom-nav-container {
+  background-color: #ffffff;
+}
+.mellobe-detail-page .bottom-nav-container .back-home-button {
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+.mellobe-detail-page .bottom-nav-container .back-home-button:hover {
+  background-color: #ff6b00;
+  color: #ffffff;
+  border: 1px solid #ff6b00;
+}
+
+@media (max-width: 1200px) {
+  .bottom-nav-container {
+    padding: 30px 100px 60px 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-nav-container {
+    padding: 20px 40px 40px 40px;
+  }
+}
+

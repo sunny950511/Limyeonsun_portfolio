@@ -28,7 +28,7 @@ function IndexSection() {
       <div className="project-list-container">
         {projects.map((project, index) => (
           <Link key={index} to={project.path} className="project-item-link">
-            <div className="project-item">
+            <div className={`project-item project-${project.title.toLowerCase().replace(/\s+/g, '-')}`}>
               <h3 className="project-title">{project.title}</h3>
               <p className="project-desc">{project.desc}</p>
             </div>

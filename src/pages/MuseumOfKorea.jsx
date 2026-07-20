@@ -245,6 +245,12 @@ function MuseumOfKorea() {
 
       {/* 8. Video Section (비디오 재생) */}
       <VideoSection />
+
+      {/* 하단 다음 버튼 */}
+      <div className="bottom-nav-container">
+        <Link to="/project/mellobe" className="back-home-button">Next Project →</Link>
+      </div>
+
       <ScrollToTopButton themeClass="theme-museum" />
     </div>
   );
